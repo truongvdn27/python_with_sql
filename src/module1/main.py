@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
-from src.utils.libs import contect_to_db, create_table, drop_table
+from src.utils.libs import connect_to_db, create_table, drop_table
 
 
 
@@ -17,7 +17,7 @@ if __name__ == "__main__":
     '''
 
     #TASK1;
-    conn = contect_to_db()
+    conn = connect_to_db()
     print("Connection successful !!")
 
     #TASK2;
